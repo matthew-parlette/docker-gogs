@@ -17,5 +17,6 @@ ln -sf /data/git /home/git
 
 rsync -rtv /data/gogs/templates/ ./templates/
 
-chown -R git:git /data .
-exec su git -c "./gogs web"
+# chown -R git:git /data .
+# exec su git -c "./gogs web"
+exec "./gogs web"
